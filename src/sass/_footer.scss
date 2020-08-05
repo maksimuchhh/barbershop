@@ -1,0 +1,136 @@
+.footer-container {
+  width: 480px;
+  background-color: $footer-bg-color;
+}
+
+.form-footer {
+  padding-top: 84px;
+}
+
+.form-title {
+  margin-bottom: 44px;
+
+  font-family: $title-font-family;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: $white-color;
+}
+
+.form-field {
+  position: relative;
+}
+
+.form-input {
+  margin-bottom: 44px;
+  padding-bottom: 8px;
+  padding-left: 44px;
+  width: 100%;
+
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+
+  color: $white-color;
+  background-color: $footer-bg-color;
+
+  &:focus,
+  &:hover {
+    border-bottom: 1px solid $white-color;
+  }
+
+  &:focus + .form-label {
+    color: $white-color;
+  }
+  &:hover + .form-label {
+    color: $white-color;
+  }
+}
+
+.telephone {
+  padding-left: 78px;
+}
+
+.form-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.comment {
+  resize: none;
+  width: 100%;
+  height: 76px;
+  margin-bottom: 44px;
+
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: $white-color;
+  background-color: $footer-bg-color;
+
+  &:focus,
+  &:hover {
+    border-bottom: 1px solid $white-color;
+  }
+}
+
+textarea::placeholder {
+  color: $secondary-text-color;
+}
+
+.footer-contacts {
+  color: $secondary-text-color;
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+  }
+}
+
+// Mobile
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding-top: 60px;
+    text-align: center;
+  }
+
+  .address-footer {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .address-list {
+    margin-top: 20px;
+
+    .item-adress {
+      margin-top: 8px;
+    }
+  }
+
+  .social-contacts {
+    margin-top: 60px;
+  }
+
+  .sign-in {
+    padding: 0;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+// Tablet
