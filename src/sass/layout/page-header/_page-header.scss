@@ -1,10 +1,10 @@
 .page-header-main {
   position: relative;
-  background-image: linear-gradient(to right, #eee8e8ef 12%, #eee8e8ef);
+  // background-image: linear-gradient(to right, #eee8e8ef 12%, #eee8e8ef);
 
-  @media screen and (min-width: 768px) {
-    background-image: linear-gradient(to right, #ffffff 20%, #191a1b);
-  }
+  // @media screen and (min-width: 768px) {
+  //   background-image: linear-gradient(to right, #ffffff 20%, #191a1b);
+  // }
 }
 
 .page-header-wraper {
@@ -54,6 +54,7 @@
   @media screen and (min-width: 768px) {
     position: static;
     max-width: 609px;
+    width: 609px;
     min-height: 680px;
     padding: 40px 24px 24px 40px;
 
@@ -76,6 +77,7 @@
 
   @media screen and (min-width: 1200px) {
     max-width: 1125px;
+    width: 1125px;
     min-height: 680px;
     padding: 40px 55px 40px 40px;
     background-image: linear-gradient(to right, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),

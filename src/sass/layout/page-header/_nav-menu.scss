@@ -22,10 +22,12 @@
     position: static;
     display: block;
     max-width: 609px;
+    height: 76px;
   }
 
   @media screen and (min-width: 1200px) {
     max-width: 1030px;
+    height: 48px;
   }
 }
 
@@ -84,7 +86,8 @@
   }
   @media screen and (min-width: 1200px) {
     max-width: 1030px;
-    justify-content: space-between;
+    display: flex;
+    // justify-content: space-between;
     align-items: center;
   }
 }
@@ -94,12 +97,16 @@
   @media screen and (min-width: 768px) {
     display: flex;
     padding: 0;
+    padding-top: 12px;
     margin-bottom: 0;
     margin-right: 47px;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-right: 241px;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 245px;
   }
   @media screen and (min-width: 1280px) {
     margin-right: 322px;
@@ -130,7 +137,7 @@
 
   @media screen and (min-width: 768px) {
     font-size: 12px;
-    line-height: 1.333;
+    line-height: 18px;
     letter-spacing: 0.1em;
     color: #ffffff;
   }
@@ -143,6 +150,7 @@
     flex-direction: column-reverse;
     align-items: center;
     margin-bottom: 0;
+    // margin-left: auto;
   }
   @media screen and (min-width: 1200px) {
     flex-direction: row;
@@ -180,9 +188,9 @@
 
 .nav-contacts-button {
   display: block;
-  min-width: 194px;
+  width: 194px;
   min-height: 40px;
-  padding: 12px 37px;
+  padding: 12px 32px;
   border: 1px solid $accent-color;
   border-radius: 25px;
   font-weight: 600;
@@ -190,6 +198,7 @@
   line-height: 1.333;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  text-align: center;
 
   &:hover,
   &:focus {
@@ -197,7 +206,7 @@
     background-color: $accent-color;
   }
   @media screen and (min-width: 768px) {
-    min-width: 160px;
+    width: 160px;
     min-height: 40px;
     padding: 12px 20px;
     margin-bottom: 20px;
@@ -212,9 +221,10 @@
 }
 
 .nav-social {
+  position: relative;
   padding: 0;
-  margin-right: 58px;
-  text-align: right;
+  padding-left: 100px;
+  text-align: left;
   @media screen and (min-width: 768px) {
     position: absolute;
     bottom: 220px;
@@ -224,23 +234,31 @@
     width: 680px;
     height: 120px;
     padding-top: 40px;
-    padding-left: 40px;
+    padding-left: 140px;
     background-color: #ffffff;
   }
 }
 
 .nav-social-item:not(:last-child) {
+  position: relative;
   margin-bottom: 24px;
   display: inline-block;
 
   &::before {
     content: ' ';
+    position: absolute;
+    right: 105px;
+    top: 50%;
+    transform: translateX(-50%);
     display: inline-block;
-    vertical-align: middle;
     width: 60px;
     height: 1px;
-    margin-right: 40px;
     background-color: $special-text-color;
+
+    @media screen and (min-width: 768px) {
+      right: 83px;
+      top: 12%;
+    }
   }
 
   @media screen and (min-width: 768px) {
