@@ -1,3 +1,11 @@
-@import 'utils/variables';
-@import 'utils/base';
+
+@import './utils/variables';
+@import './utils/base';
+@import './layout/page-header/page-header';
+@import './layout/page-header/page-nav';
+@import './layout/page-header/menu-button';
+@import './layout/page-header/nav-menu';
+@import './layout/page-header/header-dicript';
+@import './layout/advantages';
 @import 'components/team-section';
+
