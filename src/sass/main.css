@@ -2088,6 +2088,7 @@ img {
   position: relative;
   text-align: left;
   padding-left: 80px;
+  padding-bottom: 20px;
   color: rgba(157, 164, 189, 0.6);
 }
 
