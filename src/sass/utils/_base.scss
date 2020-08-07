@@ -400,15 +400,19 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
   @media screen and (min-width: 480px) {
     width: 480px;
   }
   @media screen and (min-width: 768px) {
     width: 768px;
+    padding-left: 40px;
+    padding-right: 39px;
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
+    padding-left: 55px;
+    padding-right: 55px;
   }
 }
