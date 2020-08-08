@@ -4,13 +4,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Заголовок страницы</title>
+   <title>Заголовок страницы</title>
 
 </head>
 
 <body>
   <header></header>
-  <main></main>
+  <main>
+    <section class="container-foto">
+      <h6 class="transparent">галерия работ</h6>
+      <div class="position">
+        <p class="word">На латинском языке “барба” означает “борода”</p>
+      </div>
+      <ul class="galeri">
+        <li class="galeri-item">
+         <picture>
+           <source srcset="./images/master-540.webp"
+           media="(min-width: 480px)"
+           type="image/webp"/>
+           <source srcset="./images/master-540.jpg"
+           media="(min-width: 480px)"
+           type="image/jpg"/>
+           <source srcset="./images/master-270.webp"
+           media="(min-width: 1280px)"
+           type="image/webp" />
+           <source srcset="./images/master-270.jpg"
+           media="(min-width: 1280px)"
+           type="image/jpg"/>
+           <source srcset="./images/master-270.webp" type="image/webp" />
+           <source srcset="./images/master-270.jpg" type="image/jpg" />
+           <img src="images/master-270.jpg" alt="мужская стрижка" />
+           </picture>
+        </li>
+        <li class="galeri-item">
+          <picture>
+            <source srcset="./images/face-540.webp"
+            media="(min-width: 480px)"
+            type="image/webp"/>
+            <source srcset="./images/face-540.jpg"
+            media="(min-width: 480px)"
+            type="image/jpg"/>
+            <source srcset="./images/face-270.webp"
+            media="(min-width: 1280px)"
+            type="image/webp" />
+            <source srcset="./images/face-270.jpg"
+            media="(min-width: 1280px)"
+            type="image/jpg"/>
+            <source srcset="./images/face-270.webp" type="image/webp" />
+            <source srcset="./images/face-270.jpg" type="image/jpg" />
+            <img src="images/face-270.jpg" alt="стрижка бороды" />
+            </picture>
+        </li>
+        <li class="galeri-item">
+          <picture>
+            <source srcset="./images/preview-540.webp"
+            media="(min-width: 480px)"
+            type="image/webp"/>
+            <source srcset="./images/preview-540.jpg"
+            media="(min-width: 480px)"
+            type="image/jpg"/>
+            <source srcset="./images/preview-270.webp"
+            media="(min-width: 1280px)"
+            type="image/webp" />
+            <source srcset="./images/preview-270.jpg"
+            media="(min-width: 1280px)"
+            type="image/jpg"/>
+            <source srcset="./images/preview-270.webp" type="image/webp" />
+            <source srcset="./images/preview-270.jpg" type="image/jpg" />
+            <img src="images/preview-270.jpg" alt="косметология" />
+            </picture>
+        </li>
+        <li class="galeri-item">
+          <picture>
+            <source srcset="./images/hair-540.webp"
+            media="(min-width: 480px)"
+            type="image/webp"/>
+            <source srcset="./images/hair-540.jpg"
+            media="(min-width: 480px)"
+            type="image/jpg"/>
+            <source srcset="./images/hair-270.webp"
+            media="(min-width: 1280px)"
+            type="image/webp" />
+            <source srcset="./images/hair-270.jpg"
+            media="(min-width: 1280px)"
+            type="image/jpg"/>
+            <source srcset="./images/hair-270.webp" type="image/webp" />
+            <source srcset="./images/hair-270.jpg" type="image/jpg" />
+            <img src="images/hair-270.jpg" alt="прическа" />
+            </picture>
+        </li>
+      </ul>
+     
+    </section>
+  </main>
   <footer></footer>
   <script src="./index.js"></script>
 
