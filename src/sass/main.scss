@@ -1,4 +1,3 @@
-
 @import './utils/variables';
 @import './utils/base';
 // @import './utils/slick';
@@ -9,9 +8,8 @@
 @import './layout/page-header/menu-button';
 @import './layout/page-header/nav-menu';
 @import './layout/page-header/header-dicript';
+@import './components/about-us';
+@import './components/price-section';
 @import './layout/advantages';
 @import './components/team-section';
-@import './components/price-section';
-@import './components/about-us';
-@import 'footer';
-
+@import './components/footer';
