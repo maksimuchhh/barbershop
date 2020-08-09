@@ -1,89 +1,111 @@
-<footer>
-  <div class="footer container">
-    <div class="form-footer">
-      <h2 class="form-title">Онлайн-запись</h2>
+  <footer>
+      <div class="footer-container">
+        <div class="set-footer">
+          <div class="form-footer">
+            <h2 class="form-title">Онлайн-запись</h2>
+            <form class="form" autocomplete="off">
+              <div class="form-input-set">
+                <div class="form-field name">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="form-input"
+                    placeholder=" "
+                  />
+                  <label for="name" class="form-label">Имя*</label>
+                </div>
 
-      <form class="form" autocomplete="off">
-        <div class="form-field">
-          <input
-            type="text"
-            name="name"
-            id="name"
-            class="form-input"
-            placeholder=" "
-          />
-          <label for="name" class="form-label">Имя</label>
+                <div class="form-field tel">
+                  <input
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    class="form-input telephone"
+                    placeholder=" "
+                  />
+                  <label for="tel" class="form-label">Телефон*</label>
+                </div>
+
+                <div class="textarea-footer">
+                  <textarea
+                    name="comment"
+                    rows="5"
+                    cols="5"
+                    class="comment"
+                    placeholder="Сообщение"
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="button-footer">
+                  Отправить
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="address-footer">
+            <h2 class="contacts-title">Контакты</h2>
+
+            <div class="address-time">
+              <address>
+                <ul class="list address-list">
+                  <li class="item-adress">
+                    <a href="" class="footer-contacts br">
+                      <svg class="icons" width="24" height="24">
+                        <use href="./images/sprite-footer.svg/#map-pin"></use>
+                      </svg>
+                      ул. Васильковая, 7А
+                       Киев, 08132
+                    </a>
+                  </li>
+
+                  <li class="item-adress">
+                    <a href="" class="footer-contacts links">
+                      <svg class="icons" width="24" height="24">
+                        <use href="./images/sprite-footer.svg/#phone"></use>
+                      </svg>
+                      +38 044 111 11 11</a
+                    >
+                  </li>
+
+                  <li class="item-adress">
+                    <a href="" class="footer-contacts links">
+                      <svg class="icons" width="24" height="24">
+                        <use href="./images/sprite-footer.svg/#mail"></use>
+                      </svg>
+                      barbershop@email.com</a
+                    >
+                  </li>
+                </ul>
+              </address>
+
+              <div class="time-work">
+                <h3 class="time-title">время работы</h3>
+                <p class="time-open">Ежедневно с 9:00 до 22:00</p>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="form-field">
-          <input
-            type="tel"
-            name="tel"
-            id="tel"
-            class="form-input"
-            placeholder=" "
-          />
-          <label for="tel" class="form-label">Телефон</label>
+        <div class="copyright">
+          <p class="copy">
+            <svg class="icon-copy" width="12" height="12">
+              <use href="./images/sprite-footer.svg/#group"></use>
+            </svg>
+            Copyright 2020
+          </p>
+
+          <ul class="social">
+            <li class="social-item">
+              <a href="" class="social-links">Instagram </a>
+            </li>
+
+            <li class="social-item">
+              <a href="" class="social-links">Youtube </a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </footer>
 
-        <div class="textarea-modal">
-          <textarea
-            name="comment"
-            rows="5"
-            cols="5"
-            class="comment"
-            placeholder="Сообщение"
-          ></textarea>
-        </div>
-
-        <button type="submit" class="button-footer">
-          Отправить
-        </button>
-      </form>
-    </div>
-
-    <div class="address-footer">
-      <h2 class="contacts-title">Контакты</h2>
-      <address>
-        <ul class="list address-list">
-          <li>
-            <p class="text city-adress">
-              <svg class="icon-mail" width="16" height="11">
-                <use href="./images/sprite.svg#mail"></use></svg
-              >ул. Васильковая, 7А Киев, 08132
-            </p>
-          </li>
-
-          <li class="item-adress">
-            <a href="" class="text footer-contacts links"
-              ><svg class="icon-mail" width="16" height="11">
-                <use href="./images/sprite.svg#mail"></use></svg
-              >+38 044 111 11 11</a
-            >
-          </li>
-
-          <li class="item-adress">
-            <a href="" class="text footer-contacts links"
-              ><svg class="icon-mail" width="16" height="11">
-                <use href="./images/sprite.svg#mail"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </address>
-    </div>
-
-    <div class="time-work">
-      <h3 class="time-title">время работы</h3>
-      <p class="time-open">Ежедневно с 9:00 до 22:00</p>
-    </div>
-
-    <div class="copyright">
-      <p class="copy">Copyright 2020</p>
-      <ul class="social-links">
-        <li class="social-item">Instagram</li>
-        <li class="social-item">Youtube</li>
-      </ul>
-    </div>
-  </div>
-</footer>
