@@ -410,8 +410,8 @@ body {
     padding-left: 40px;
     padding-right: 39px;
   }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
     padding-left: 55px;
     padding-right: 55px;
   }
@@ -419,10 +419,10 @@ body {
 .section {
   padding: 84px 0;
   @media screen and (min-width: 768px) {
-  padding: 100px 0;
+    padding: 100px 0;
   }
-  @media screen and (min-width: 1200px) {
-  padding: 130px 0;
+  @media screen and (min-width: 1280px) {
+    padding: 130px 0;
   }
 }
 img {
