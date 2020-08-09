@@ -1,0 +1,50 @@
+.page-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  // justify-content: space-between;
+  width: 100%;
+  min-height: 100px;
+  padding-top: 40px;
+  padding-left: 31px;
+  padding-right: 31px;
+  // background-color: red;
+  @media screen and (min-width: 768px) {
+    position: static;
+    display: flex;
+    min-height: 78px;
+    // justify-content: space-around;
+    padding: 0;
+    margin-bottom: 156px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-height: 48px;
+    margin-bottom: 184px;
+  }
+}
+.logo {
+  position: absolute;
+  top: 40px;
+  left: 31px;
+  z-index: 2;
+  padding: 0;
+  margin: 0;
+  fill: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    top: 32px;
+    left: -109px;
+    fill: $primary-title-color;
+  }
+  @media screen and (min-width: 1200px) {
+    left: -100px;
+  }
+}
+
+.logo-img {
+  width: 69px;
+  height: 55.5px;
+  margin: 0;
+  padding: o;
+}

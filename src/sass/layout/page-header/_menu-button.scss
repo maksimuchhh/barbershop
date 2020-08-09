@@ -1,0 +1,30 @@
+.menu-button {
+  display: inline-flex;
+  position: absolute;
+  top: 40px;
+  right: 31px;
+  z-index: 30;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  fill: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+  fill: $primary-title-color;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
