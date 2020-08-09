@@ -1612,8 +1612,8 @@ img {
 
 .price-section {
   width: 100%;
-  background-image: url(".././images/price-images/imgmob1.png"), -webkit-gradient(linear, left top, left bottom, from(#111319));
-  background-image: url(".././images/price-images/imgmob1.png"), linear-gradient(#111319);
+  background-image: url("/src/images/price-images/imgmob1.png"), -webkit-gradient(linear, left top, left bottom, from(#111319));
+  background-image: url("/src/images/price-images/imgmob1.png"), linear-gradient(#111319);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -1624,45 +1624,45 @@ img {
 @media screen and (min-width: 480px) {
   .price-section {
     width: 480px;
-    background-image: url(".././images/price-images/imgmob1.png"), -webkit-gradient(linear, left top, left bottom, from(#111319));
-    background-image: url(".././images/price-images/imgmob1.png"), linear-gradient(#111319);
+    background-image: url("/src/images/price-images/imgmob1.png"), -webkit-gradient(linear, left top, left bottom, from(#111319));
+    background-image: url("/src/images/price-images/imgmob1.png"), linear-gradient(#111319);
   }
 }
 
 @media screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .price-section {
-    background-image: url(".././images/price-images/imgmob2.png"), -webkit-gradient(linear, left top, left bottom, from(#111319));
-    background-image: url(".././images/price-images/imgmob2.png"), linear-gradient(#111319);
+    background-image: url("/src/images/price-images/imgmob2.png"), -webkit-gradient(linear, left top, left bottom, from(#111319));
+    background-image: url("/src/images/price-images/imgmob2.png"), linear-gradient(#111319);
   }
 }
 
 @media screen and (min-width: 768px) {
   .price-section {
     width: 768px;
-    background-image: url(".././images/price-images/imgtabl1.png"), -webkit-gradient(linear, left top, left bottom, from(#111319));
-    background-image: url(".././images/price-images/imgtabl1.png"), linear-gradient(#111319);
+    background-image: url("/src/images/price-images/imgtabl1.png"), -webkit-gradient(linear, left top, left bottom, from(#111319));
+    background-image: url("/src/images/price-images/imgtabl1.png"), linear-gradient(#111319);
   }
 }
 
 @media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .price-section {
-    background-image: url(".././images/price-images/imgtabl2.png"), -webkit-gradient(linear, left top, left bottom, from(#111319));
-    background-image: url(".././images/price-images/imgtabl2.png"), linear-gradient(#111319);
+    background-image: url("/src/images/price-images/imgtabl2.png"), -webkit-gradient(linear, left top, left bottom, from(#111319));
+    background-image: url("/src/images/price-images/imgtabl2.png"), linear-gradient(#111319);
   }
 }
 
 @media screen and (min-width: 1280px) {
   .price-section {
     width: 1280px;
-    background-image: url(".././images/price-images/imgdesk1.png"), -webkit-gradient(linear, left top, left bottom, from(#111319));
-    background-image: url(".././images/price-images/imgdesk1.png"), linear-gradient(#111319);
+    background-image: url("/src/images/price-images/imgdesk1.png"), -webkit-gradient(linear, left top, left bottom, from(#111319));
+    background-image: url("/src/images/price-images/imgdesk1.png"), linear-gradient(#111319);
   }
 }
 
 @media screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .price-section {
-    background-image: url(".././images/price-images/imgdesk2.png"), -webkit-gradient(linear, left top, left bottom, from(#111319));
-    background-image: url(".././images/price-images/imgdesk2.png"), linear-gradient(#111319);
+    background-image: url("/src/images/price-images/imgdesk2.png"), -webkit-gradient(linear, left top, left bottom, from(#111319));
+    background-image: url("/src/images/price-images/imgdesk2.png"), linear-gradient(#111319);
   }
 }
 
