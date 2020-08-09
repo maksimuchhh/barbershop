@@ -362,6 +362,9 @@ ul {
 }
 a {
   text-decoration: none;
+  margin: 0;
+  padding: 0;
+  color: $primary-title-color;
 }
 h1,
 h2,
@@ -378,6 +381,13 @@ hr {
 input {
   outline: none;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap');
 body {
   // max-width: 1280px;
@@ -390,15 +400,33 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
   @media screen and (min-width: 480px) {
     width: 480px;
   }
   @media screen and (min-width: 768px) {
     width: 768px;
+    padding-left: 40px;
+    padding-right: 39px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+}
+.section {
+  padding: 84px 0;
+  @media screen and (min-width: 768px) {
+  padding: 100px 0;
   }
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+  padding: 130px 0;
   }
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
