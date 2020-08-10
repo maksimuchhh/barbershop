@@ -9,7 +9,7 @@
 .price {
   &-section {
     width: 100%;
-    background-image: url('.././images/price-images/imgmob1.png'),
+    background-image: url('../images/price-images/imgmob1.png'),
       linear-gradient($background-color);
     background-size: cover;
     background-position: center;
@@ -19,33 +19,33 @@
 
     @media screen and (min-width: 480px) {
       width: 480px;
-      background-image: url('.././images/price-images/imgmob1.png'),
+      background-image: url('../images/price-images/imgmob1.png'),
         linear-gradient($background-color);
 
       @media screen and (min-resolution: 2dppx) {
-        background-image: url('.././images/price-images/imgmob2.png'),
+        background-image: url('../images/price-images/imgmob2.png'),
           linear-gradient($background-color);
       }
     }
 
     @media screen and (min-width: 768px) {
       width: 768px;
-      background-image: url('.././images/price-images/imgtabl1.png'),
+      background-image: url('../images/price-images/imgtabl1.png'),
         linear-gradient($background-color);
 
       @media screen and (min-resolution: 2dppx) {
-        background-image: url('.././images/price-images/imgtabl2.png'),
+        background-image: url('../images/price-images/imgtabl2.png'),
           linear-gradient($background-color);
       }
     }
 
     @media screen and (min-width: 1280px) {
       width: 1280px;
-      background-image: url('.././images/price-images/imgdesk1.png'),
+      background-image: url('./../images/price-images/imgdesk1.png'),
         linear-gradient($background-color);
 
       @media screen and (min-resolution: 2dppx) {
-        background-image: url('.././images/price-images/imgdesk2.png'),
+        background-image: url('../images/price-images/imgdesk2.png'),
           linear-gradient($background-color);
       }
     }
