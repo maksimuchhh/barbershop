@@ -6,8 +6,8 @@
 .price {
   &-section {
     width: 100%;
-    background-image: url('/src/images/price-images/imgmob1.png'),
-      linear-gradient($background-color);
+    background-image: url('../images/price-images/imgmob1.png'),
+      linear-gradient(to right, $background-color, $background-color);
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -16,59 +16,60 @@
 
     @media screen and (min-width: 480px) {
       width: 480px;
-      background-image: url('/src/images/price-images/imgmob1.png'),
-        linear-gradient($background-color);
+      background-image: url('../images/price-images/imgmob1.png'),
+        linear-gradient(to right, $background-color, $background-color);
 
       @media screen and (min-resolution: 2dppx) {
-        background-image: url('/src/images/price-images/imgmob2.png'),
-          linear-gradient($background-color);
+        background-image: url('../images/price-images/imgmob2.png'),
+          llinear-gradient(to right, $background-color, $background-color);
       }
     }
 
     @media screen and (min-width: 768px) {
       width: 768px;
-      background-image: url('/src/images/price-images/imgtabl1.png'),
-        linear-gradient($background-color);
+      background-image: url('../images/price-images/imgtabl1.png'),
+        linear-gradient(to right, $background-color, $background-color);
 
       @media screen and (min-resolution: 2dppx) {
-        background-image: url('/src/images/price-images/imgtabl2.png'),
-          linear-gradient($background-color);
+        background-image: url('../images/price-images/imgtabl2.png'),
+          linear-gradient(to right, $background-color, $background-color);
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+      min-width: 1200px;
+      // max-width: 1280px;
+      background-image: url('../images/price-images/imgdesk1.png'),
+        linear-gradient(to right, $background-color, $background-color);
+
+      @media screen and (min-resolution: 2dppx) {
+        background-image: url('../images/price-images/imgdesk2.png'),
+          linear-gradient(to right, $background-color, $background-color);
       }
     }
 
     @media screen and (min-width: 1280px) {
       width: 1280px;
-      background-image: url('/src/images/price-images/imgdesk1.png'),
-        linear-gradient($background-color);
+      background-image: url('../images/price-images/imgdesk1.png'),
+        linear-gradient(to right, $background-color, $background-color);
 
       @media screen and (min-resolution: 2dppx) {
-        background-image: url('/src/images/price-images/imgdesk2.png'),
-          linear-gradient($background-color);
+        background-image: url('../images/price-images/imgdesk2.png'),
+          linear-gradient(to right, $background-color, $background-color);
       }
     }
   }
 
   &-section .container {
-    padding-left: 0px;
-    margin-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
-    padding: 84px 31px;
+    padding: 84px 15px;
 
     @media screen and (min-width: 480px) {
       width: 480px;
       padding: 84px 31px;
-    }
-
-    &-text::before {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 5.5px;
-      left: 0px;
-      width: 60px;
-      height: 1px;
-
-      background-color: $special-text-color;
     }
 
     @media screen and (min-width: 768px) {
@@ -76,13 +77,21 @@
       padding: 100px 39px;
     }
 
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+      padding: 130px 15px;
+    }
     @media screen and (min-width: 1280px) {
-      width: 1280px;
-      padding: 130px 55px;
+      padding: 130px 35px;
     }
   }
 
+  &-text-box {
+    position: relative;
+  }
+
   &-text {
+    position: relative;
     font-family: $primary-font-family;
     font-style: normal;
     font-weight: 600;
@@ -104,7 +113,8 @@
     left: 0px;
     width: 60px;
     height: 1px;
-    background-color: $primary-font-family;
+    z-index: 5;
+    background-color: $special-text-color;
   }
 
   &-title {
@@ -132,7 +142,7 @@
       height: 440px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
       width: 1170px;
       height: 240px;
       display: flex;
@@ -173,8 +183,12 @@
   }
 
   &1 {
+    @media screen and (max-width: 380px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
     padding: 30px 40px 0px 40px;
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
       width: 585px;
       height: 240px;
       background: linear-gradient(
@@ -186,8 +200,12 @@
   }
 
   &2 {
+    @media screen and (max-width: 380px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
     padding: 0px 40px 30px 40px;
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
       width: 585px;
       height: 240px;
       padding-top: 30px;

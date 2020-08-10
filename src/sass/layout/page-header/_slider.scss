@@ -144,7 +144,7 @@
     // }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     &.slider1 {
       background-image: linear-gradient(
           to right,
@@ -214,13 +214,14 @@
 .icon-navigation {
   display: none;
   @media screen and (min-width: 768px) {
+    display: block;
     position: absolute;
     top: 50%;
     right: 40px;
     z-index: 6;
     transform: translateY(-50%);
-    width: 18px;
-    height: 30px;
+    width: 19px;
+    height: 32px;
   }
   @media screen and (min-width: 1200px) {
     right: 55px;

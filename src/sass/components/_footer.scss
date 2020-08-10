@@ -231,11 +231,7 @@ textarea::placeholder {
   }
 }
 
-<<<<<<< footer
-.social-footer-item {
-=======
 .social-item {
->>>>>>> master
   margin-right: 40px;
 
   &:last-child {
@@ -287,9 +283,7 @@ textarea::placeholder {
   }
 
   .address-list {
-
-padding-left: 31px;
-
+    padding-left: 31px;
   }
 
   .item-adress {
@@ -312,30 +306,24 @@ padding-left: 31px;
 
   .copyright {
     display: flex;
-
-
+    flex-direction: column-reverse;
+    padding: 44px 31px;
   }
 
   .copy {
     display: flex;
     align-items: center;
-
     justify-content: flex-start;
-    margin-top: 79px;
-    margin-right: 15px;
-
   }
 
   .social {
     display: flex;
-
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
-    margin-bottom: 79px;
+    margin-bottom: 20px;
   }
 }
-
 
 // Tablet
 
@@ -405,9 +393,7 @@ padding-left: 31px;
   }
 
   .address-list {
-
-padding-left: 39px;
-
+    padding-left: 39px;
   }
 
   .item-adress {
