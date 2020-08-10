@@ -219,6 +219,10 @@ textarea::placeholder {
     margin-right: 40px;
 
     background: $primary-title-color;
+
+    @media screen and (max-width: 350px) {
+      margin-right: 20px;
+    }
   }
 }
 
@@ -231,7 +235,7 @@ textarea::placeholder {
   }
 }
 
-.social-item {
+.social-footer-item {
   margin-right: 40px;
 
   &:last-child {
@@ -240,6 +244,16 @@ textarea::placeholder {
 }
 
 // Mobile
+
+@media screen and (max-width: 350px) {
+  .social-footer-item {
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
 
 @media screen and (max-width: 767px) {
   .footer-container {
