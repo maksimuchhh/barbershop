@@ -1,0 +1,105 @@
+.container-foto {
+margin-left: auto;
+margin-right: auto;
+position: relative;
+
+@media screen and (min-width: 480px) {
+ width: 480px;  
+padding: 84px 31px;
+}
+
+@media screen and (min-width: 768px) {
+width: 768px;    
+padding: 100px 39px;
+}
+@media screen and (min-width: 1280px) {
+ width: 1280px;  
+padding: 130px 55px;
+}}
+
+
+.transparent {margin: 0;
+height: 0;
+color: transparent;}
+
+.position {position: relative;
+    margin-left: 0;
+}
+
+
+
+.word {
+    margin-bottom: 44px;
+    padding-left: 80px;
+    text-transform: uppercase;
+    color: $primary-title-color;
+    font-family: Open Sans, sans-serif;
+    font-weight: 600px;
+    font-size: 11px;
+    @media screen and (max-width: 767px) {
+      line-height: 1.9;  
+      width: 338px;
+    }
+    @media screen and (min-width: 768px) {
+    line-height: 1.36;
+               }
+   
+    
+&:before {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 1px;
+    left: 0;
+    background-color: $primary-title-color;
+    
+@media screen and (max-width: 767px) {
+top: 25%
+}
+@media screen and (min-width: 768px) {
+  top: 50%
+}}}
+
+
+img {display: block;
+    max-width: 100%;
+       height: auto;
+    object-fit: cover;}
+    
+li {list-style: none;}
+
+.galeri {
+    padding-left: 0;
+    margin: 0;
+    justify-content: center;
+    
+    @media screen and (min-width: 768px) {
+    display: flex; 
+    flex-wrap: wrap;    
+    }   } 
+    
+    
+    
+    .galeri-item { width: 100%;
+    @media screen and (min-width: 480px) {
+    & img {width: 100%;
+        max-height: 360px;
+       object-fit: cover;}    
+    }    
+       
+    @media screen and (max-width: 1279px) {
+    &:not(:last-child) {margin-bottom: 30px;}     
+        }
+    @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);  
+    
+    @media screen and (max-width: 1279px) {
+    &:not(:nth-child(2n)) {margin-right: 30px;}  
+    &:nth-last-child(-n+2) {margin-bottom: 0;}  
+    } }
+    @media screen and (min-width: 1280px) {
+    flex-basis: calc((100% - 90px) / 4);
+    margin-bottom: 0;
+    &:not(:last-child) {margin-right: 30px;}    
+    }
+    }
