@@ -4,7 +4,9 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 3;
+
+    z-index: 10;
+
     width: 100vw;
     height: 100vh;
     overflow-y: auto;
@@ -58,10 +60,13 @@
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 5;
+
+    z-index: 20;
     transform: translateX(-100%);
     max-width: 337px;
-    height: 796px;
+    // height: 796px;
+    height: 100vh;
+
     overflow-y: auto;
     padding: 118px 40px;
     text-align: left;
@@ -106,7 +111,9 @@
     padding-top: 0;
     display: flex;
     align-items: center;
-    margin-right: 245px;
+
+    margin-right: 220px;
+
   }
   @media screen and (min-width: 1280px) {
     margin-right: 322px;
@@ -130,6 +137,9 @@
   line-height: 1.389;
   letter-spacing: 0.1em;
 
+  transition: color 250ms ease;
+
+
   &:hover,
   &:focus {
     color: $accent-color;
@@ -137,8 +147,10 @@
 
   @media screen and (min-width: 768px) {
     font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 0.1em;
+
+    line-height: 16px;
+    letter-spacing: 0.08em;
+
     color: #ffffff;
   }
 }
@@ -171,6 +183,9 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
 
+  transition: color 250ms ease;
+
+
   &:hover,
   &:focus {
     color: $accent-color;
@@ -200,6 +215,9 @@
   text-transform: uppercase;
   text-align: center;
 
+  transition: color 250ms ease, background-color 250ms ease;
+
+
   &:hover,
   &:focus {
     color: #ffffff;
@@ -228,7 +246,10 @@
   @media screen and (min-width: 768px) {
     position: absolute;
     bottom: 220px;
-    left: 100px;
+
+    // right: -11px;
+    left: -60px;
+
     transform: translate(-50%, -50%) rotate(-90deg);
     display: flex;
     width: 680px;
@@ -237,6 +258,16 @@
     padding-left: 140px;
     background-color: #ffffff;
   }
+
+  // @media screen and (min-width: 1200px) {
+  //   bottom: 220px;
+  //   // right: -11px;
+  //   left: -60px;
+  //   height: 75px;
+  //   padding-top: 0;
+  //   padding-bottom: 58px;
+  // }
+
 }
 
 .nav-social-item:not(:last-child) {
@@ -272,6 +303,10 @@
   font-size: 14px;
   line-height: 1.357;
   letter-spacing: 0.2em;
+
+  transition: color 250ms ease;
+
+
   &:hover,
   &:focus {
     color: $accent-color;

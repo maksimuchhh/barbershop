@@ -419,14 +419,16 @@ body {
 .section {
   padding: 84px 0;
   @media screen and (min-width: 768px) {
-  padding: 100px 0;
+    padding: 100px 0;
   }
-  @media screen and (min-width: 1200px) {
-  padding: 130px 0;
+  @media screen and (min-width: 1280px) {
+    padding: 130px 0;
   }
 }
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
+

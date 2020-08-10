@@ -29,6 +29,8 @@
   @media (min-width: 768px) {
     margin-right: 30px;
     & img {
+
+      max-width: 330px;
       margin-bottom: 30px;
     }
   }
@@ -124,6 +126,7 @@
   &:hover {
     background: #ff6c00;
     color: #ffffff;
+    cursor: pointer;
   }
   &:focus {
     background: #ff6c00;
