@@ -9,7 +9,9 @@
     }
   }
   &-container {
+
     @media screen and(min-width:1280px) {
+
       display: flex;
       justify-content: space-around;
     }
@@ -28,7 +30,9 @@
       @media screen and(min-width:768px) {
         width: 500px;
       }
+
       @media screen and(min-width:1280px) {
+
         order: 2;
       }
     }
@@ -75,7 +79,9 @@
       justify-content: flex-end;
       margin-top: 44px;
     }
+
     @media screen and(min-width:1280px) {
+
       margin-top: 0;
     }
     &1 {
@@ -96,7 +102,9 @@
     @media screen and(min-width:768px) {
       max-width: 210px;
     }
+
     @media screen and(min-width:1280px) {
+
       max-width: 170px;
     }
     height: 133px;
