@@ -1,3 +1,4 @@
+
 // .page-header-main {
 //   position: relative;
 //   // background-image: linear-gradient(to right, #eee8e8ef 12%, #eee8e8ef);
@@ -6,6 +7,7 @@
 //   //   background-image: linear-gradient(to right, #ffffff 20%, #191a1b);
 //   // }
 // }
+
 
 .page-header-wraper {
   position: relative;
@@ -19,11 +21,14 @@
     display: flex;
     justify-content: flex-end;
     max-width: 768px;
+
     height: 680px;
+
     padding-left: 159px;
   }
 
   @media screen and (min-width: 1200px) {
+
     max-width: 1200px;
     width: 1200px;
     padding-left: 115px;
@@ -31,6 +36,7 @@
   @media screen and (min-width: 1280px) {
     max-width: 1280px;
     width: 1280px;
+
     padding-left: 155px;
   }
 }
@@ -38,6 +44,7 @@
   position: relative;
   max-width: 480px;
   min-height: 580px;
+
 
   @media screen and (min-width: 768px) {
     max-width: 609px;
@@ -73,4 +80,5 @@
   @media screen and (min-width: 1200px) {
     padding: 40px 55px 40px 40px;
   }
+
 }
