@@ -1,0 +1,556 @@
+.footer-container {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $footer-bg-color;
+}
+
+.form-title {
+  font-family: $title-font-family;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: $white-color;
+}
+
+.form-input {
+  width: 100%;
+  padding-bottom: 8px;
+
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  outline: none;
+
+  color: $white-color;
+  background-color: $footer-bg-color;
+  transition: $transition;
+
+  &:focus,
+  &:hover {
+    border-bottom: 1px solid $white-color;
+  }
+
+  &:focus + .form-label,
+  &:not(:placeholder-shown) + .form-label {
+    color: $white-color;
+    transform: translateY(-25px);
+    opacity: 0;
+  }
+  &:hover + .form-label {
+    color: $white-color;
+  }
+}
+
+.form-field {
+  position: relative;
+}
+
+.form-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 1;
+
+  color: $special-text-color;
+  transition: $transition;
+}
+
+.comment {
+  resize: none;
+  width: 100%;
+
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  outline: none;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: $white-color;
+  background-color: $footer-bg-color;
+  transition: $transition;
+
+  &:focus,
+  &:hover {
+    border-bottom: 1px solid $white-color;
+  }
+}
+
+textarea::placeholder {
+  color: $special-text-color;
+}
+
+.button-footer {
+  padding: 12px 38px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  text-align: center;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  border: 1px solid $accent-color;
+  border-radius: 25px;
+
+  color: $white-color;
+  background-color: $footer-bg-color;
+  cursor: pointer;
+  transition: $transition;
+
+  &:hover {
+    background-color: $accent-color;
+  }
+}
+
+// Second part common properties
+
+.contacts-title {
+  font-family: $title-font-family;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+
+  color: $white-color;
+}
+
+.footer-contacts {
+  display: flex;
+  align-items: center;
+
+  font-style: normal;
+  font-family: $primary-font-family;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: $secondary-text-color;
+  stroke: $secondary-text-color;
+
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+    stroke: $white-color;
+  }
+}
+
+.icons {
+  margin-right: 16px;
+}
+
+.address-footer {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.time-title {
+  display: flex;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $white-color;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+    align-self: center;
+
+    background: rgba(157, 164, 189, 0.4);
+  }
+}
+
+.time-open {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: $secondary-text-color;
+}
+
+.copyright {
+  background-color: $copyright-bg-color;
+}
+
+.copy {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  letter-spacing: 0.2em;
+
+  color: $secondary-text-color;
+}
+
+.icon-copy {
+  margin-right: 6px;
+}
+
+.social {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+    margin-right: 40px;
+
+    background: $primary-title-color;
+  }
+}
+
+.social-links {
+  color: $primary-title-color;
+  transition: $transition;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+<<<<<<< footer
+.social-footer-item {
+=======
+.social-item {
+>>>>>>> master
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+// Mobile
+
+@media screen and (max-width: 767px) {
+  .footer-container {
+    max-width: 480px;
+  }
+
+  .form-footer {
+    text-align: center;
+    padding-top: 84px;
+    margin-left: 31px;
+    margin-right: 31px;
+  }
+
+  .form-title {
+    margin-bottom: 44px;
+  }
+
+  .form-input {
+    margin-bottom: 44px;
+  }
+
+  .comment {
+    height: 76px;
+    margin-bottom: 44px;
+  }
+
+  .button-footer {
+    margin-bottom: 84px;
+  }
+
+  //   Second part
+
+  .address-footer {
+    padding-top: 84px;
+    background-image: url(../images/barbbgfooter.png);
+  }
+
+  .contacts-title {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .address-list {
+
+padding-left: 31px;
+
+  }
+
+  .item-adress {
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+      text-decoration-line: underline;
+    }
+  }
+
+  .time-work {
+    padding-top: 44px;
+    margin-left: 31px;
+  }
+
+  .time-open {
+    margin-top: 20px;
+    padding-bottom: 84px;
+  }
+
+  .copyright {
+    display: flex;
+
+
+  }
+
+  .copy {
+    display: flex;
+    align-items: center;
+
+    justify-content: flex-start;
+    margin-top: 79px;
+    margin-right: 15px;
+
+  }
+
+  .social {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 79px;
+  }
+}
+
+
+// Tablet
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-container {
+    max-width: 768px;
+  }
+
+  .form-footer {
+    padding-top: 100px;
+    margin-left: 39px;
+    margin-right: 39px;
+  }
+
+  .form-title {
+    margin-bottom: 44px;
+  }
+
+  .form-input-set {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-field {
+    width: 330px;
+    margin-bottom: 44px;
+  }
+
+  .form-field.name {
+    margin-right: 30px;
+  }
+
+  .form-field.tel {
+    margin-right: 0;
+  }
+
+  .textarea-footer {
+    width: 690px;
+  }
+
+  .comment {
+    width: 100%;
+    height: 76px;
+    margin-bottom: 44px;
+  }
+
+  .button-footer {
+    margin-bottom: 100px;
+  }
+
+  //   Second part
+
+  .address-footer {
+    padding-top: 84px;
+    background-image: url(../images/barbtablet.png);
+  }
+
+  .contacts-title {
+    margin-bottom: 40px;
+    margin-left: 39px;
+  }
+
+  .address-time {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 100px;
+  }
+
+  .address-list {
+
+padding-left: 39px;
+
+  }
+
+  .item-adress {
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+      text-decoration-line: underline;
+    }
+  }
+
+  .br {
+    white-space: pre-line;
+  }
+
+  .time-work {
+    width: 330px;
+    margin-left: 110px;
+    padding-top: 30px;
+  }
+
+  .time-open {
+    margin-top: 20px;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    padding: 56px 39px;
+  }
+
+  .copy {
+    display: flex;
+    align-items: center;
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+  }
+}
+
+// Descktop
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    min-width: 1200px;
+  }
+
+  .set-footer {
+    display: flex;
+  }
+
+  .form-footer {
+    padding-top: 130px;
+    margin-left: 55px;
+    margin-right: 40px;
+    width: 50%;
+  }
+
+  .form-title {
+    margin-bottom: 44px;
+  }
+
+  .form-input-set {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-field {
+    width: calc((100% - 30px) / 2);
+    margin-bottom: 44px;
+  }
+
+  .form-field.name {
+    margin-right: 30px;
+  }
+
+  .form-field.tel {
+    margin-right: 0;
+  }
+
+  .textarea-footer {
+    padding: 0;
+    width: 100%;
+  }
+
+  .comment {
+    height: 76px;
+    margin-bottom: 44px;
+  }
+
+  //   Second part
+
+  .address-footer {
+    width: 50%;
+    padding-top: 130px;
+    padding-left: 100px;
+    background-image: url(../images/barbbgfooter.png);
+  }
+
+  .contacts-title {
+    margin-bottom: 40px;
+    margin-left: 0;
+  }
+
+  .address-list {
+    margin-left: 0;
+  }
+
+  .item-adress {
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+      text-decoration-line: underline;
+    }
+  }
+
+  .br {
+    white-space: pre-line;
+  }
+
+  .time-work {
+    padding-top: 70px;
+    padding-bottom: 130px;
+  }
+
+  .time-open {
+    margin-top: 20px;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    padding: 56px 55px;
+  }
+
+  .copy {
+    display: flex;
+    align-items: center;
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+  }
+}
