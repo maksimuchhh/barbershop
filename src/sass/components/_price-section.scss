@@ -237,6 +237,7 @@
 }
 
 .button-price {
+  display: inline-block;
   background-color: inherit;
   font-family: $primary-font-family;
   font-style: normal;
@@ -253,6 +254,7 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  padding: 12px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,

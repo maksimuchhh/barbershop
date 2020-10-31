@@ -106,7 +106,7 @@
   .social-item:focus-within & {
     fill: $accent-color;
 
-    transition: transform $transition;
+    transition: fill $transition;
   }
 }
 .icon-rectangle {
