@@ -1,10 +1,10 @@
 .overlay {
   @media screen and (max-width: 767px) {
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
-
+    opacity: 0;
+    pointer-events: none;
     z-index: 10;
 
     width: 100vw;
@@ -14,9 +14,10 @@
     background: rgba(25, 28, 38, 0.8);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.08),
       0 1px 3px rgba(0, 0, 0, 0.16);
-
+    transition: opacity $transition;
     &.is-open {
-      display: block;
+      opacity: 1;
+      pointer-events: auto;
     }
   }
 
@@ -56,7 +57,6 @@
 
 .nav-menu {
   @media screen and (max-width: 767px) {
-    display: none;
     position: absolute;
     top: 0;
     right: 0;
