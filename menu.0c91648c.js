@@ -121,11 +121,23 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 (function () {
   var menuBtnRef = document.querySelector('[data-menu-button]');
   var mobileMenuRef = document.querySelector('[data-menu]');
+  var modalMenu = document.querySelector('.nav-menu');
+  var overlay = document.querySelector('.overlay');
   menuBtnRef.addEventListener('click', function () {
     var expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
+    document.body.classList.toggle('hidden');
     menuBtnRef.classList.toggle('is-open');
     menuBtnRef.setAttribute('aria-expanded', !expanded);
     mobileMenuRef.classList.toggle('is-open');
+  });
+  overlay.addEventListener('click', function (evt) {
+    if (evt.target.classList.contains('page-nav-link') || evt.target.classList.contains('nav-contacts-button') || evt.target.classList.contains('overlay')) {
+      var expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
+      document.body.classList.remove('hidden');
+      menuBtnRef.classList.toggle('is-open');
+      menuBtnRef.setAttribute('aria-expanded', !expanded);
+      mobileMenuRef.classList.toggle('is-open');
+    }
   });
 })();
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -156,7 +168,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60866" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "11495" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
