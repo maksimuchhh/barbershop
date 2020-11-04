@@ -490,8 +490,22 @@ img {
   visibility: visible;
 }
 
+@keyframes scroll-up-btn-out {
+  from {
+    bottom: 30px;
+  }
+  to {
+    bottom: 700px;
+  }
+}
+.slider-cont {
+  overflow: hidden;
+  background-color: #1a1a1c;
+}
+
 .slider-item {
   position: relative;
+  display: block;
   min-height: 580px;
   width: 100%;
   background-repeat: no-repeat;

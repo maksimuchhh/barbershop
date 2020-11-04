@@ -119,6 +119,18 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"js/scroll-up.js":[function(require,module,exports) {
 var btn = $('#button');
+var btnUp = document.querySelector('#button');
+btnUp.addEventListener('click', addRemoveAnimation);
+
+function addRemoveAnimation(params) {
+  btnUp.style.setProperty('animation', 'scroll-up-btn-out 1s ease 100ms');
+  setTimeout(removeProp, 2000);
+}
+
+function removeProp(params) {
+  btnUp.style.removeProperty('animation');
+}
+
 $(window).scroll(function () {
   if ($(window).scrollTop() > 300) {
     btn.addClass('show');
@@ -160,7 +172,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "17749" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59452" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

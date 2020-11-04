@@ -122,26 +122,57 @@ var sliderItem = document.querySelector('.slider-item');
 var sliderNav = document.querySelector('.slider-navigation');
 var nextBtn = document.querySelector('.next');
 var prevBtn = document.querySelector('.prev');
+var animationDuration = '700ms';
 sliderNav.addEventListener('click', changePic);
+setInterval(clickOnNextBtn, 15000);
 
 function changePic(evt) {
+  setTimeout(removeAnimation, 700);
+
   if (evt.target === nextBtn) {
-    if (sliderItem.classList.contains('slider1')) {
-      sliderItem.classList.replace('slider1', 'slider2');
-    } else if (sliderItem.classList.contains('slider2')) {
-      sliderItem.classList.replace('slider2', 'slider3');
-    } else if (sliderItem.classList.contains('slider3')) {
-      sliderItem.classList.replace('slider3', 'slider1');
-    }
+    sliderItem.style.setProperty('animation-name', 'slideOutLeft');
+    sliderItem.style.setProperty('animation-duration', animationDuration);
+    setTimeout(nextPic, 700);
   } else {
-    if (sliderItem.classList.contains('slider1')) {
-      sliderItem.classList.replace('slider1', 'slider3');
-    } else if (sliderItem.classList.contains('slider2')) {
-      sliderItem.classList.replace('slider2', 'slider1');
-    } else if (sliderItem.classList.contains('slider3')) {
-      sliderItem.classList.replace('slider3', 'slider2');
-    }
+    sliderItem.style.setProperty('animation-name', 'slideOutRight');
+    sliderItem.style.setProperty('animation-duration', animationDuration);
+    setTimeout(prevPic, 700);
   }
+}
+
+function removeAnimation() {
+  sliderItem.style.removeProperty('animation-name');
+  sliderItem.style.removeProperty('animation-duration');
+}
+
+function nextPic(params) {
+  if (sliderItem.classList.contains('slider1')) {
+    sliderItem.classList.replace('slider1', 'slider2');
+  } else if (sliderItem.classList.contains('slider2')) {
+    sliderItem.classList.replace('slider2', 'slider3');
+  } else if (sliderItem.classList.contains('slider3')) {
+    sliderItem.classList.replace('slider3', 'slider1');
+  }
+
+  sliderItem.style.setProperty('animation-name', 'slideInRight');
+  sliderItem.style.setProperty('animation-duration', animationDuration);
+}
+
+function prevPic(params) {
+  if (sliderItem.classList.contains('slider1')) {
+    sliderItem.classList.replace('slider1', 'slider3');
+  } else if (sliderItem.classList.contains('slider2')) {
+    sliderItem.classList.replace('slider2', 'slider1');
+  } else if (sliderItem.classList.contains('slider3')) {
+    sliderItem.classList.replace('slider3', 'slider2');
+  }
+
+  sliderItem.style.setProperty('animation-name', 'slideInLeft');
+  sliderItem.style.setProperty('animation-duration', animationDuration);
+}
+
+function clickOnNextBtn(params) {
+  nextBtn.click();
 }
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -171,7 +202,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "17749" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59452" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
