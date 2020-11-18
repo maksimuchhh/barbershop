@@ -90,6 +90,7 @@ ul.team-card {
         height: 44px;
         border-radius: 50%;
         border: none;
+        background-color: #ffffff;
     }
     &-icon {
         width: 20px;
@@ -100,7 +101,6 @@ ul.team-card {
 .social-link, .social-icon {
     .social-item:hover &, .social-item:focus-within & {
         fill: $accent-color;
-        background-color: #ffffff;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
